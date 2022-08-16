@@ -109,8 +109,8 @@ function library:Window(name)
 
     UiWindow.Name = "UiWindow"
     UiWindow.Parent = TurtleUiLib
-    UiWindow.BackgroundColor3 = Color3.fromRGB(105,105,105)
-    UiWindow.BorderColor3 = Color3.fromRGB(105,105,105)
+    UiWindow.BackgroundColor3 = Color3.fromRGB(255,255,255)
+    UiWindow.BorderColor3 = Color3.fromRGB(255,255,255)
     UiWindow.Position = UDim2.new(0, xOffset, 0, 20)
     UiWindow.Size = UDim2.new(0, 207, 0, 33)
     UiWindow.ZIndex = 4 + zindex
@@ -131,7 +131,7 @@ function library:Window(name)
     local HeaderText = Instance.new("TextLabel")
     HeaderText.Name = "HeaderText"
     HeaderText.Parent = Header
-    HeaderText.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    HeaderText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     HeaderText.BackgroundTransparency = 1.000
     HeaderText.Position = UDim2.new(0, 0, -0.0020698905, 0)
     HeaderText.Size = UDim2.new(0, 206, 0, 33)
@@ -145,7 +145,7 @@ function library:Window(name)
     local Window = Instance.new("Frame")
     Minimise.Name = "Minimise"
     Minimise.Parent = Header
-    Minimise.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    Minimise.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Minimise.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Minimise.Position = UDim2.new(0, 185, 0, 2)
     Minimise.Size = UDim2.new(0, 22, 0, 22)
@@ -165,7 +165,7 @@ function library:Window(name)
 
     Window.Name = "Window"
     Window.Parent = Header
-    Window.BackgroundColor3 = Color3.fromRGB(47, 54, 64)
+    Window.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Window.BorderColor3 = Color3.fromRGB(47, 54, 64)
     Window.Position = UDim2.new(0, 0, 0, 0)
     Window.Size = UDim2.new(0, 207, 0, 33)
@@ -185,14 +185,14 @@ function library:Window(name)
         listOffset[winCount] = listOffset[winCount] + 32
         Button.Name = "Button"
         Button.Parent = Window
-        Button.BackgroundColor3 = Color3.fromRGB(53, 59, 72)
-        Button.BorderColor3 = Color3.fromRGB(113, 128, 147)
+        Button.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+        Button.BorderColor3 = Color3.fromRGB(210, 210, 210)
         Button.Position = UDim2.new(0, 12, 0, listOffset[winCount])
         Button.Size = UDim2.new(0, 182, 0, 26)
         Button.ZIndex = 2 + zindex
         Button.Selected = true
         Button.Font = Enum.Font.SourceSans
-        Button.TextColor3 = Color3.fromRGB(245, 246, 250)
+        Button.TextColor3 = Color3.fromRGB(255, 255, 255)
         Button.TextSize = 16.000
         Button.TextStrokeTransparency = 123.000
         Button.TextWrapped = true
@@ -202,7 +202,7 @@ function library:Window(name)
         pastSliders[winCount] = false
     end
     function functions:Label(text, color)
-        local color = color or Color3.fromRGB(220, 221, 225)
+        local color = color or Color3.fromRGB(225, 225, 225)
 
         sizes[winCount] = sizes[winCount] + 32
         Window.Size = UDim2.new(0, 207, 0, sizes[winCount] + 10)
@@ -211,9 +211,9 @@ function library:Window(name)
         local Label = Instance.new("TextLabel")
         Label.Name = "Label"
         Label.Parent = Window
-        Label.BackgroundColor3 = Color3.fromRGB(220, 221, 225)
+        Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Label.BackgroundTransparency = 1.000
-        Label.BorderColor3 = Color3.fromRGB(27, 42, 53)
+        Label.BorderColor3 = Color3.fromRGB(210, 210, 210)
         Label.Position = UDim2.new(0, 0, 0, listOffset[winCount])
         Label.Size = UDim2.new(0, 206, 0, 29)
         Label.Font = Enum.Font.SourceSans
@@ -263,8 +263,8 @@ function library:Window(name)
 
         ToggleButton.Name = "ToggleButton"
         ToggleButton.Parent = ToggleDescription
-        ToggleButton.BackgroundColor3 = Color3.fromRGB(47, 54, 64)
-        ToggleButton.BorderColor3 = Color3.fromRGB(113, 128, 147)
+        ToggleButton.BackgroundColor3 = Color3.fromRGB(200, 200,200)
+        ToggleButton.BorderColor3 = Color3.fromRGB(210, 210, 210)
         ToggleButton.Position = UDim2.new(1.2061069, 0, 0.0769230798, 0)
         ToggleButton.Size = UDim2.new(0, 22, 0, 22)
         ToggleButton.Font = Enum.Font.SourceSans
@@ -279,8 +279,8 @@ function library:Window(name)
 
         ToggleFiller.Name = "ToggleFiller"
         ToggleFiller.Parent = ToggleButton
-        ToggleFiller.BackgroundColor3 = Color3.fromRGB(68, 189, 50)
-        ToggleFiller.BorderColor3 = Color3.fromRGB(47, 54, 64)
+        ToggleFiller.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+        ToggleFiller.BorderColor3 = Color3.fromRGB(210, 210, 210)
         ToggleFiller.Position = UDim2.new(0, 5, 0, 5)
         ToggleFiller.Size = UDim2.new(0, 12, 0, 12)
         ToggleFiller.Visible = on
